@@ -3,11 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="eClavijoS5.Views.vActualizarEliminar"
              Title="vActualizarEliminar">
-    <VerticalStackLayout>
-        <Label 
-            Text="ACTUALIZAR ELIMINAR ESTUDIANTE"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20"
+        BackgroundColor="White">
+
+        <Label Text="ACTUALIZAR / ELIMINAR ESTUDIANTE"
+           FontSize="18"
+           FontAttributes="Bold"
+           TextColor="#0369A1"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
 
         <Grid ColumnSpacing="5">
             <Grid.RowDefinitions>
@@ -20,39 +27,71 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="CODIGO"
-                Grid.Row="0"
-                Grid.Column="0" />
+            <Label Text="CÓDIGO"
+       FontSize="14"
+       FontAttributes="Bold"
+       TextColor="#0369A1"
+       VerticalOptions="Center"
+       Grid.Row="0"
+       Grid.Column="0" />
+            
             <Entry x:Name="txtCodigo"
                 IsEnabled="False"
+           PlaceholderColor="#7DD3FC"
+           TextColor="#0369A1"
+           BackgroundColor="Transparent"
                 Grid.Row="0"
                 Grid.Column="1" />
 
             <Label Text="NOMBRE"
+        FontSize="14"
+       FontAttributes="Bold"
+       TextColor="#0369A1"
+       VerticalOptions="Center"
                 Grid.Row="1"
                 Grid.Column="0" />
+            
             <Entry x:Name="txtNombre"
+                   PlaceholderColor="#7DD3FC"
+           TextColor="#0369A1"
+           BackgroundColor="Transparent"
                 Placeholder="MODIFICA EL NOMBRE"
                 Grid.Row="1"
                 Grid.Column="1" />
             
             <Label Text="APELLIDO"
+       FontSize="14"
+       FontAttributes="Bold"
+       TextColor="#0369A1"
+       VerticalOptions="Center"
                 Grid.Row="2"
                 Grid.Column="0" />
+            
             <Entry x:Name="txtApellido"
+                   PlaceholderColor="#7DD3FC"
+           TextColor="#0369A1"
+           BackgroundColor="Transparent"
                 Placeholder="MODIFICA EL APELLIDO"
                 Grid.Row="2"
                 Grid.Column="1" />
             
             <Label Text="EDAD"
+       FontSize="14"
+       FontAttributes="Bold"
+       TextColor="#0369A1"
+       VerticalOptions="Center"
                 Grid.Row="3"
                 Grid.Column="0" />
+            
             <Entry x:Name="txtEdad"
+                   PlaceholderColor="#7DD3FC"
+           TextColor="#0369A1"
+           BackgroundColor="Transparent"
                 Placeholder="MODIFICA LA EDAD"
                 Grid.Row="3"
                 Grid.Column="1" />
         </Grid>
-        <Grid>
+        <Grid ColumnSpacing="5">
             <Grid.RowDefinitions>
                 <RowDefinition/>
             </Grid.RowDefinitions>
@@ -63,11 +102,21 @@
 
             <Button x:Name="btnActualizar"
  Text="Actualizar"
+                    BackgroundColor="#38BDF8"
+            TextColor="#0C4A6E"
+            FontAttributes="Bold"
+            FontSize="15"
  Grid.Row="0"
  Grid.Column="0"
  Clicked="btnActualizar_Clicked" />
+            
+            
             <Button x:Name="btnEliminar"
  Text="Eliminar"
+            BackgroundColor="#38BDF8"
+            TextColor="#0C4A6E"
+            FontAttributes="Bold"
+            FontSize="15"
  Grid.Row="0"
  Grid.Column="1"
  Clicked="btnEliminar_Clicked" />

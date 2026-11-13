@@ -15,6 +15,7 @@
         <Entry
             x:Name="txtNombre"
             Placeholder="INGRESA EL NOMBRE"
+            TextColor="#648DAE"
             FontAttributes="Bold"
             PlaceholderColor="#648DAE"
             Keyboard="Text" />
@@ -22,12 +23,14 @@
             x:Name="txtApellido"
             Placeholder="INGRESA EL APELLIDO"
                         FontAttributes="Bold"
+            TextColor="#648DAE"
             PlaceholderColor="#648DAE"
             Keyboard="Text" />
         <Entry
             x:Name="txtEdad"
             Placeholder="Edad"
                         FontAttributes="Bold"
+            TextColor="#648DAE"
             PlaceholderColor="#648DAE"
             Keyboard="Numeric" />
 
