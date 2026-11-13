@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eClavijoS5.Views.vAgregarEstudiante"
+             Title="vAgregarEstudiante">
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20"
+        BackgroundColor="White">
+        <Label 
+            Text="SEMANA 7: CRUD ESTUDIANTES"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Entry
+            x:Name="txtNombre"
+            Placeholder="INGRESA EL NOMBRE"
+            FontAttributes="Bold"
+            PlaceholderColor="#648DAE"
+            Keyboard="Text" />
+        <Entry
+            x:Name="txtApellido"
+            Placeholder="INGRESA EL APELLIDO"
+                        FontAttributes="Bold"
+            PlaceholderColor="#648DAE"
+            Keyboard="Text" />
+        <Entry
+            x:Name="txtEdad"
+            Placeholder="Edad"
+                        FontAttributes="Bold"
+            PlaceholderColor="#648DAE"
+            Keyboard="Numeric" />
+
+        <Grid ColumnSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="btnAgregar"
+            Text="Agregar"
+            Grid.Row="0"
+            Grid.Column="0"
+            Clicked="btnAgregar_Clicked" />
+
+            <Button x:Name="btnCancelar"
+            Text="Cancelar"
+            Grid.Row="0"
+            Grid.Column="1"
+            Clicked="btnCancelar_Clicked" />
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

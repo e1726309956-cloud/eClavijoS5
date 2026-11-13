@@ -4,7 +4,9 @@
              x:Class="eClavijoS5.Views.Estudiante"
              Title="Estudiante">
 
-    <VerticalStackLayout Padding="15">
+    <VerticalStackLayout Padding="15"
+                         Spacing="15"
+                         BackgroundColor="White">
 
         <Label Text="Lista de Estudiantes"
            FontSize="22"
@@ -50,7 +52,7 @@
                Grid.Column="3"/>
         </Grid>
 
-        <ListView x:Name="listaEstudiante"
+        <ListView x:Name="listaEstudiante" ItemSelected="listaEstudiante_ItemSelected"
               HasUnevenRows="True"
               SeparatorVisibility="Default">
 
@@ -64,7 +66,7 @@
                            CornerRadius="8"
                            HasShadow="False">
 
-                            <Grid ColumnSpacing="2">
+                            <Grid ColumnSpacing="5">
 
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="70"/>
@@ -99,6 +101,13 @@
             </ListView.ItemTemplate>
 
         </ListView>
+        
+        <Button
+            x:Name="btnAgregar"
+            Text="Agregar Estudiante"
+            BackgroundColor="#2563EB"
+            TextColor="White"
+            Clicked="btnAgregar_Clicked" />
 
     </VerticalStackLayout>
 
